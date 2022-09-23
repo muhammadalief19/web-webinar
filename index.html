@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Sederhana</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden relative text-white">
+    <!-- header start -->
+    <header class="yigit bg-transparent absolute top-0 left-0 w-full flex items-center z-10" id="head">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-sky-600 block py-6">Kelompok 10</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+
+            <nav class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none" id="nav-menu">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#bio" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Bio</a>
+                </li>
+                <li class="group">
+                  <a href="#partner" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Partner</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- cover start -->
+    <div class="grid grid-flow-row">
+      <!-- beranda start -->
+      <div class="w-full bg-sky-600" id="home">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,192L48,208C96,224,192,256,288,229.3C384,203,480,117,576,122.7C672,128,768,224,864,256C960,288,1056,256,1152,234.7C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="w-[85%] mx-auto flex flex-col lg:flex-row justify-evenly h-max px-3 py-5">
+          <div class="lg:w-[45%] w-full"><img src="./public/img/webinar-1.svg" alt="" / class="animate-bounce"></div>
+          <div class="lg:w-[45%] w-full flex flex-col h-max">
+            <p class="lg:text-xl text-base font-bold mx-auto mb-5">Hello Every<span class="text-red-300">body</span></p>
+            <p class="lg:text-2xl text-xl text-justify mb-10">
+              Selamat datang di website portfolio sederhana kami, website ini dibuat dengan <span class="font-semibold text-amber-400">HTML</span>, <span class="font-semibold text-blue-300">CSS</span>,
+              <span class="font-semibold text-yellow-300">JS</span> dan <span class="font-semibold text-teal-300">TailwindCSS</span>, cocok untuk kalangan web developer pemula. Tutorial dan referensinya juga banyak kok di google ataupun
+              youtube, yang penting punya niat untuk belajar dan juga budayakan membaca
+            </p>
+            <button class="w-max mx-auto px-5 py-3 border-2 rounded-3xl border-cyan-500 hover:bg-cyan-500 transition-colors duration-200">Get Started</button>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <!-- beranda end -->
+
+      <!-- bio start -->
+      <div class="w-full flex flex-col items-center pt-24" id="bio">
+        <p class="lg:text-2xl text-lg font-semibold text-slate-500 mb-5">BIO</p>
+        <div class="w-[90%]">
+          <div id="carouselExampleIndicators" class="carousel slide relative" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div> -->
+            <div class="carousel-inner relative w-full overflow-hidden">
+              <div class="carousel-item active float-left w-full">
+                <div class="flex justify-center">
+                  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                    <img class="w-full lg:w-1/3 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="public/img/alief.jpg" alt="" />
+                    <div class="p-6 flex flex-col justify-center">
+                      <h5 class="text-gray-900 text-lg font-semibold mb-2">Muhammad Alief Putra Pratama</h5>
+                      <p class="text-gray-700 text-base mb-1">3122522023</p>
+                      <p class="text-gray-700 text-sm mb-1">Sumenep, 19 Agustus 2003</p>
+                      <p class="text-gray-700 text-sm mb-1">Fullstack Developer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item float-left w-full">
+                <div class="flex justify-center">
+                  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                    <img class="w-full lg:w-1/3 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="public/img/hisyam.jpeg" alt="" />
+                    <div class="p-6 flex flex-col justify-center">
+                      <h5 class="text-gray-900 text-lg font-semibold mb-2">Donny Ahmad Hisyam</h5>
+                      <p class="text-gray-700 text-base mb-1">3122522001</p>
+                      <p class="text-gray-700 text-sm mb-1">Mojokerto, 21 Juli 2003</p>
+                      <p class="text-gray-700 text-sm mb-1">Forensic</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item float-left w-full">
+                <div class="flex justify-center">
+                  <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
+                    <img class="w-full lg:w-1/3 object-cover rounded-t-lg md:rounded-none md:rounded-l-lg" src="public/img/yoga.jpeg" alt="" />
+                    <div class="p-6 flex flex-col justify-center">
+                      <h5 class="text-gray-900 text-lg font-semibold mb-2">Vrayoga Loreansa</h5>
+                      <p class="text-gray-700 text-base mb-1">3122522005</p>
+                      <p class="text-gray-700 text-sm mb-1">Sumenep, 07 Februari 2004</p>
+                      <p class="text-gray-700 text-sm mb-1">Dokter Kandungan</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span class="inline-block bg-no-repeat" aria-hidden="true"
+                ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-slate-600 text-white">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+                  />
+                </svg>
+              </span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span class="inline-block bg-no-repeat" aria-hidden="true"
+                ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:text-slate-600 text-white">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z"
+                  />
+                </svg>
+              </span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#0284C7"
+            fill-opacity="1"
+            d="M0,224L30,208C60,192,120,160,180,165.3C240,171,300,213,360,208C420,203,480,149,540,128C600,107,660,117,720,149.3C780,181,840,235,900,256C960,277,1020,267,1080,234.7C1140,203,1200,149,1260,154.7C1320,160,1380,224,1410,256L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <!-- bio end -->
+
+      <!-- Partner -->
+      <div class="w-full flex flex-col items-center bg-sky-600 pt-24" id="partner">
+        <p class="lg:text-2xl text-lg font-semibold mb-5">Partner</p>
+        <div class="w-3/4 md:w-1/2 lg:w-3/4 grid lg:grid-cols-4 grid-flow-row gap-10 pb-20">
+          <div class="w-full flex justify-center">
+            <img src="public/img/partner-1.svg" alt="" class="w-1/2 lg:w-full grayscale hover:grayscale-0 duration-300 transition-all duration-all" />
+          </div>
+          <div class="w-full flex justify-center">
+            <img src="public/img/patner-2.svg" alt="" class="w-1/2 lg:w-full grayscale hover:grayscale-0 duration-300 transition-all duration-all" />
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <img src="public/img/partner-3.svg" alt="" class="w-1/2 lg:w-full grayscale hover:grayscale-0 duration-300 transition-all duration-all" />
+          </div>
+          <div class="w-full flex items-center justify-center">
+            <img src="public/img/partner-4.svg" alt="" class="w-1/2 lg:w-full grayscale hover:grayscale-0 duration-300 transition-all duration-all" />
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,192L34.3,192C68.6,192,137,192,206,186.7C274.3,181,343,171,411,170.7C480,171,549,181,617,197.3C685.7,213,754,235,823,208C891.4,181,960,107,1029,90.7C1097.1,75,1166,117,1234,160C1302.9,203,1371,245,1406,266.7L1440,288L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+      <!-- Partner -->
+
+      <!-- contact -->
+      <section class="overflow-hidden mb-[250px] text-sky-500 pt-20" id="contact">
+        <div class="w-full px-6">
+          <div class="grid grid-flow-row">
+            <div class="w-full text-center">
+              <h1 class="font-bold pt-6 text-lg lg:text-xl text-primary">Contact</h1>
+              <br />
+              <h1 class="font-bold text-second text-3xl lg:text-5xl mt-1 mb-3">Contact me</h1>
+              <p class="text-sm lg:text-base font-normal text-slate-400 leading-[35px] lg:leading-[30px]">Jika anda punya kritik ataupun saran silahkan mengisi form di bawah ini</p>
+            </div>
+            <div class="">
+              <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-10 hidden" role="alert" id="alert">
+                <div class="flex">
+                  <div class="py-1">
+                    <svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-bold">Thank you</p>
+                    <p class="text-sm">i have received your message.</p>
+                  </div>
+                </div>
+              </div>
+              <form name="contact-form">
+                <div class="w-full lg:mx-auto lg:w-2/3">
+                  <div class="mb-8 w-full px-4">
+                    <label for="name" class="text-base font-bold text-primary">Name</label>
+                    <input type="text" id="name" name="nama" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+                  </div>
+                  <div class="mb-8 w-full px-4">
+                    <label for="email" class="text-base font-bold text-primary">Email</label>
+                    <input type="email" id="email" name="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+                  </div>
+                  <div class="mb-8 w-full px-4">
+                    <label for="message" class="text-base font-bold text-primary">Message</label>
+                    <textarea type="email" id="email" name="pesan" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+                  </div>
+                  <div class="w-full px-4">
+                    <button class="w-full rounded-full bg-sky-500 py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg" type="submit" id="buttonKirim">Send</button>
+                    <br /><br />
+                    <button disabled type="button" class="w-full hidden rounded-full bg-sky-500 py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg" id="buttonLoad">
+                      <svg role="status" class="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                          fill="#E5E7EB"
+                        />
+                        <path
+                          d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                      Loading...
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
+    </div>
+    <!-- script tw-elemnet -->
+    <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
+    <!-- script tw-elemnet -->
+    <!-- script -->
+    <script src="public/js/script.js"></script>
+    <!-- script -->
+  </body>
+</html>
+
+<!--  -->
