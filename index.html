@@ -7,61 +7,29 @@
     <title>Website Sederhana</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          },
-        },
-      };
-    </script>
   </head>
   <body class="overflow-x-hidden relative text-white">
     <!-- header start -->
-    <header class="yigit bg-transparent absolute top-0 left-0 w-full flex items-center z-10" id="head">
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-sky-600 block py-6">Kelompok 10</a>
-          </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-            </button>
-
-            <nav class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none" id="nav-menu">
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a href="#home" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Home</a>
-                </li>
-                <li class="group">
-                  <a href="#bio" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Bio</a>
-                </li>
-                <li class="group">
-                  <a href="#partner" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Partner</a>
-                </li>
-                <li class="group">
-                  <a href="#contact" class="text-base text-sky-600 py-2 mx-8 flex group-hover:text-primary">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+    <nav class="absolute w-full grid h-16 grid-cols-2 px-3 text-sky-600" id="head">
+      <div class="font-semibold text-xl text-primary h-16 flex items-center">Kelompok 10</div>
+      <nav class="hidden absolute lg:relative lg:flex lg:h-16 items-center shadow-md shadow-slate-400 lg:shadow-none top-14 right-5 lg:inset-0 rounded-md bg-white lg:bg-transparent" id="nav-menu">
+        <ul class="flex w-28 h-36 lg:w-full lg:h-max flex-col lg:flex-row justify-around items-center text-sky-600">
+          <li class=""><a href="#home">Beranda</a></li>
+          <li class=""><a href="#bio">Bio</a></li>
+          <li class=""><a href="#partner">Partner</a></li>
+          <li class=""><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="hamburger" name="hamburger" type="button" class="block absolute right-6 lg:hidden top-3">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+      </button>
+    </nav>
     <!-- header end -->
 
     <!-- cover start -->
-    <div class="grid grid-flow-row">
+    <div class="grid grid-flow-row pt-20">
       <!-- beranda start -->
       <div class="w-full bg-sky-600" id="home">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -281,10 +249,9 @@
       <!-- contact -->
     </div>
     <!-- script tw-elemnet -->
-    <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
     <!-- script tw-elemnet -->
     <!-- script -->
-    <script src="public/js/script.js"></script>
+    <script src="./public/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <!-- script -->
   </body>
